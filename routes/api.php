@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
-
-use App\Http\Controllers\API\RegisterController;
 use App\Http\Controllers\API\ProductController;
+use App\Http\Controllers\API\RegisterController;
+use App\Http\Controllers\Magazine\TagController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +21,6 @@ Route::post('login' , [RegisterController::class , 'Login']);
 
 Route::middleware('auth:api')->group( function (){
    Route::resource('products' , ProductController::class);
+   Route::resource('tags', TagController::class);
+   Route::resource('sliders', \App\Http\Controllers\Magazine\SliderController::class);
 });
