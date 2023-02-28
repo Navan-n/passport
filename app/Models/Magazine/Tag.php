@@ -15,7 +15,9 @@ class Tag extends Model
         'slug',
         'meta_desc',
         'body',
-        'hot'
+        'hot',
+        'createdBy',
+        'editedBy'
     ];
 
     public function posts()

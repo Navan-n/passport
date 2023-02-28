@@ -15,5 +15,7 @@ class Slider extends Model
         'alt',
         'link',
         'position',
+        'createdBy',
+        'editedBy'
     ];
 }

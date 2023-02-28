@@ -10,10 +10,12 @@ class Page extends Model
     use HasFactory;
 
     protected $table = 'mag_pages';
-    
+
     protected $fillable = [
        'title',
        'slug',
-       'body'
+       'body',
+       'createdBy',
+        'editedBy'
     ];
 }

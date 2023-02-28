@@ -22,7 +22,7 @@ class CreateMagSlidersTable extends Migration
             $table->string('category')->nullable();
             $table->string('link');
             $table->string('position');
-            $table->bigInteger('CreatedBy')->nullable();
+            $table->bigInteger('CreatedBy');
             $table->bigInteger('EditedBy')->nullable();
             $table->timestamps();
         });
